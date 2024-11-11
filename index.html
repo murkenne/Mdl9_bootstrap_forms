@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <title>Enhanced Form Layouts</title>
+</head>
+<body>
+    <div class="container mt-5">
+
+        <!-- Task 1: Multi-column form layout using Bootstrap's grid system -->
+        <h2>Multi-Column Form Layout</h2>
+        <form>
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <label for="firstName" class="form-label">First Name</label>
+                    <input type="text" class="form-control" id="firstName" placeholder="First Name">
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label for="lastName" class="form-label">Last Name</label>
+                    <input type="text" class="form-control" id="lastName" placeholder="Last Name">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="Email">
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label for="phone" class="form-label">Phone</label>
+                    <input type="tel" class="form-control" id="phone" placeholder="Phone">
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+        <hr>
+
+        <!-- Task 2: Inline form layout for contact form -->
+        <h2>Inline Contact Form</h2>
+        <form class="d-flex align-items-center">
+            <label for="inlineName" class="form-label me-2">Name:</label>
+            <input type="text" class="form-control me-2" id="inlineName" placeholder="Name">
+            <label for="inlineEmail" class="form-label me-2">Email:</label>
+            <input type="email" class="form-control me-2" id="inlineEmail" placeholder="Email">
+            <button type="submit" class="btn btn-secondary">Submit</button>
+        </form>
+        <hr>
+
+        <!-- Task 3: Stacked form layout with labels above input fields -->
+        <h2>Stacked Form Layout</h2>
+        <form>
+            <div class="mb-3">
+                <label for="stackedUsername" class="form-label">Username</label>
+                <input type="text" class="form-control" id="stackedUsername" placeholder="Username">
+            </div>
+            <div class="mb-3">
+                <label for="stackedPassword" class="form-label">Password</label>
+                <input type="password" class="form-control" id="stackedPassword" placeholder="Password">
+            </div>
+            <div class="mb-3">
+                <label for="stackedConfirmPassword" class="form-label">Confirm Password</label>
+                <input type="password" class="form-control" id="stackedConfirmPassword" placeholder="Confirm Password">
+            </div>
+                <button type="submit" class="btn btn-success mb-3">Register</button>
+
+        </form>
+
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
